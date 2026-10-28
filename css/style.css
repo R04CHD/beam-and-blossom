@@ -784,6 +784,60 @@ p {
 }
 
 /* =========================================================
+   PICKUP LOCATOR
+   ========================================================= */
+
+.pickup-locator {
+
+  background: rgba(255,255,255,0.45);
+
+}
+
+.pickup-locations {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
+
+}
+
+.pickup-location {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 2rem;
+
+  background: var(--color-white);
+  border: 1px solid rgba(34,34,59,0.08);
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+
+}
+
+.pickup-location h3,
+.pickup-location address {
+
+  margin: 0;
+
+}
+
+.pickup-location address {
+
+  color: #444455;
+  font-style: normal;
+
+}
+
+.pickup-location .btn {
+
+  margin-top: auto;
+
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 
@@ -980,6 +1034,12 @@ p {
   border-radius: 14px;
 
   border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.quote-form input[type="file"] {
+
+  cursor: pointer;
 
 }
 

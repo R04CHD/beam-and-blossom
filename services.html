@@ -669,6 +669,7 @@
     <form
       action="https://formspree.io/f/xwlevjgk"
       method="POST"
+      enctype="multipart/form-data"
       class="quote-form"
     >
 
@@ -707,6 +708,14 @@
         rows="5"
         placeholder="Tell us about your project..."
       ></textarea>
+
+      <label for="quote-attachment">Attach a design or reference (JPG, PNG or PDF)</label>
+      <input
+        type="file"
+        id="quote-attachment"
+        name="attachment"
+        accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"
+      />
 
       <button
         type="submit"

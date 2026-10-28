@@ -362,6 +362,23 @@ if (quoteForm) {
 
 }
 
+document.querySelectorAll('.quote-form input[type="file"]').forEach((fileInput) => {
+
+  fileInput.addEventListener('change', () => {
+
+    const file = fileInput.files[0];
+
+    if (file && !/\.(jpe?g|png|pdf)$/i.test(file.name)) {
+
+      fileInput.value = '';
+      alert('Please choose a JPG, PNG or PDF file.');
+
+    }
+
+  });
+
+});
+
 /* =========================================================
    AUTO CLOSE MOBILE NAV IF WINDOW RESIZED
    ========================================================= */

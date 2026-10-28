@@ -334,6 +334,72 @@
     </section>
 
     <!-- =====================================================
+         PICKUP LOCATOR
+    ====================================================== -->
+
+    <section class="pickup-locator" aria-labelledby="pickup-locator-heading">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            LOCAL PICKUP
+          </p>
+
+          <h2 id="pickup-locator-heading">
+            Find a Pickup Location
+          </h2>
+
+          <p>
+            Choose the pickup point arranged for your order. Please coordinate
+            your collection with us before visiting.
+          </p>
+
+        </div>
+
+        <div class="pickup-locations">
+
+          <article class="pickup-location">
+
+            <h3>Clyde North</h3>
+
+           
+            <a
+              class="btn primary-btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=37+Kilmarnock+Way%2C+Clyde+North+VIC+3978"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get directions to the Clyde North pickup location"
+            >
+              Get Directions
+            </a>
+
+          </article>
+
+          <article class="pickup-location">
+
+            <h3>Wandin North</h3>
+
+            <a
+              class="btn primary-btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=413+Warburton+Highway%2C+Wandin+North+VIC+3139"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get directions to the Wandin North pickup location"
+            >
+              Get Directions
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
          CONTACT FORM
     ====================================================== -->
 
@@ -365,6 +431,7 @@
             aria-labelledby="contact-form-heading"
             action="https://formspree.io/f/xwlevjgk"
             method="POST"
+            enctype="multipart/form-data"
           >
 
             <!-- NAME -->
@@ -438,6 +505,17 @@
               placeholder="Tell us about your project, ideas, quantities or preferred turnaround times..."
               required
             ></textarea>
+
+            <label for="project-attachment">
+              Attach a design or reference (JPG, PNG or PDF)
+            </label>
+
+            <input
+              type="file"
+              id="project-attachment"
+              name="attachment"
+              accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"
+            />
 
             <!-- SUBMIT -->
 
@@ -737,7 +815,7 @@
 
     </div>
 
-<form action="https://formspree.io/f/xwlevjgk" method="POST" class="quote-form">
+<form action="https://formspree.io/f/xwlevjgk" method="POST" enctype="multipart/form-data" class="quote-form">
   <label for="panel-name">Name</label>
   <input type="text" id="panel-name" name="name" required />
 
@@ -761,6 +839,14 @@
 
   <label for="panel-message">Project Details</label>
   <textarea id="panel-message" name="message" rows="5" placeholder="Tell us about your idea..."></textarea>
+
+  <label for="quote-attachment">Attach a design or reference (JPG, PNG or PDF)</label>
+  <input
+    type="file"
+    id="quote-attachment"
+    name="attachment"
+    accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"
+  />
 
   <button type="submit" class="btn primary-btn full-width-btn">Send Quote Request</button>
 
